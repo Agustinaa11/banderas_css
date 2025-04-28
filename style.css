@@ -104,15 +104,33 @@ h1 {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
 }
+
 .argentina .franja {
     width: 100%;
     height: 100%;
+    position: relative; /* necesario para centrar la estrella */
 }
+
 .argentina .celeste {
     background-color: #74acdf;
 }
+
 .argentina .blanca {
     background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.estrella {
+    width: 50px;
+    height: 50px;
+    background-color: gold;
+    clip-path: polygon(
+        50% 0%, 61% 35%, 98% 35%, 68% 57%,
+        79% 91%, 50% 70%, 21% 91%, 32% 57%,
+        2% 35%, 39% 35%
+    );
 }
 
 /* Italia */
